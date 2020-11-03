@@ -216,6 +216,10 @@ header div {
 }
 
 /*--------- PEDIDOS-VISUALIZAR ---------*/
+.bigrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 #pedivisu {
     background-color: white;
     border-radius: 10px;    
@@ -265,6 +269,27 @@ header div {
     padding: 5px;
     font-weight: 100;
 }
+.cp {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: 300px;
+}
+.cpg {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+.grid5-2 {
+    text-align: left;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
 
 /*--------- CLIENTES -------------*/
 .grid_cont {
@@ -295,6 +320,9 @@ header div {
 .rosa {
     color: rgb(244, 33, 58);
     font-weight: 500;
+}
+.senha {
+    text-align: center;
 }
 .eye {
     width: 20px;
@@ -365,7 +393,27 @@ select {
     margin: 10px 0px;
     text-align: center;
 }
+.grid4 a {
+    text-decoration: none;
+    color: rgb(244, 33, 58);
+}
 .borracha {
     width: 20px;
     margin: 0 auto;
+}
+
+/*------------- Produtos --------------*/
+.wbx {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+.wbxi {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    outline: none;
+    border: none;
 }
