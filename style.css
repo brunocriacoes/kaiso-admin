@@ -124,6 +124,75 @@ ul {
     display: none;
 }
 
+/*-------------------- Index ------------------------*/
+#index {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/sushi-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#index form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+#index h1 {
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#index form > input {
+    width: 100%;
+    margin: 15px 0px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    height: 35px;
+    text-indent: 20px;
+    text-align: left;
+}
+#index form > input::placeholder {
+    color: rgba(0, 0, 0, 0.877);
+    font-weight: bolder;
+    font-size: 17px;
+}
+#index form div input {
+    width: 190px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 35px;
+    color: white;
+    background-color: rgb(244, 33, 58);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 15px 15px 15px 0px;
+    cursor: pointer;
+}
+#index form div input:hover {
+    transition: 350ms linear;
+    background-color: rgb(255, 0, 30);
+    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
+}
+#index a {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+#index a:hover {
+    transition: 350ms;
+    color: rgb(48, 226, 250);
+}
+
 /*---------------------- Painel ----------------------*/
 select {
     font-size: 20px;
@@ -213,6 +282,75 @@ select {
         margin: 25px 0px;
         font-size: 12px;
     }
+
+    /*-------------------- Index ------------------------*/
+#index {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/sushi-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#index form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+#index h1 {
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#index form > input {
+    width: 80%;
+    margin: 15px 0px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    height: 35px;
+    text-indent: 20px;
+    text-align: left;
+}
+#index form > input::placeholder {
+    color: rgba(0, 0, 0, 0.877);
+    font-weight: bolder;
+    font-size: 17px;
+}
+#index form div input {
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 35px;
+    color: white;
+    background-color: rgb(244, 33, 58);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 15px 15px 15px 0px;
+    cursor: pointer;
+}
+#index form div input:hover {
+    transition: 350ms linear;
+    background-color: rgb(255, 0, 30);
+    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
+}
+#index a {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+#index a:hover {
+    transition: 350ms;
+    color: rgb(48, 226, 250);
+}
 
     /*---------------------- Painel --------------------*/
     .corpo {
