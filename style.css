@@ -1,419 +1,244 @@
-/*-------- GERAL --------*/
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/*---------------------- Tags Gerais ----------------------*/
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
     min-height: 100vh;
 }
+:root {
+    --black: #202020;
+    --rosaM: rgb(244, 33, 58);
+    --gray: rgb(234, 234, 234)
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-weight: 400;
+    margin-left: 20px;
+}
+h3 {
+    font-weight: 400;
+}
 h4 {
-    margin-bottom: 20px;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bolder;
+    margin: 0 0 10px 0;
 }
-.estoylokito {
-    height: 100vh;
-}
-
-/* Login */
-#index {
-    width: 100%;
-    height: 100%;
-    background-image: url("./img/sushi-bg.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#index form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-}
-#index h1 {
-    color: #ffffff;
-    margin-bottom: 50px;
-    font-size: 40px;
-}
-#index form > input {
-    width: 100%;
-    margin: 15px 0px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    background-color: #ffffff;
-    height: 35px;
-    text-indent: 20px;
-    text-align: left;
-}
-#index form > input::placeholder {
-    color: rgba(0, 0, 0, 0.877);
-    font-weight: bolder;
-    font-size: 17px;
-}
-#index form div input {
-    width: 190px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    height: 35px;
-    color: white;
-    background-color: rgb(244, 33, 58);
-    font-weight: 600;
-    font-size: 15px;
-    margin: 15px 15px 15px 0px;
-    cursor: pointer;
-}
-#index form div input:hover {
-    transition: 350ms linear;
-    background-color: rgb(255, 0, 30);
-    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
-}
-#index a {
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-}
-#index a:hover {
-    transition: 350ms;
-    color: rgb(48, 226, 250);
-}
-
-/* Área Padrão */
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
 }
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #202020;
-    padding: 5px 40px;
-}
-header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-}
-.perfil {
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    border: none;
-    margin: 0px 0px 0px 25px;
-}
-.menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #202020;
-    width: fit-content;
-    border-top: 2px solid black;
-    padding: 70px 0px 0px 0px;
-}
-.menu a {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    height: 40px;
-    width: 100%;
-    margin: 5px 0px;
-    font-size: 25px;
-    font-weight: 100;   
-    padding: 0px 10px 0px 10px;
-}
-.menu a:hover {
-    background-color: rgba(83, 83, 83, 0.747);
-}
-.menu .ico {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-    filter: invert(1);
-}
-#cor {
-    background-color: rgb(244, 33, 58);
-}
-#corpo {
-    padding: 80px 60px;
-    background-color: rgb(234, 234, 234);
+.corpo {
+    background-color: var(--gray);
     width: 100%;
     min-height: 100vh;
+    z-index: -1;
+    padding: 50px;
+    margin: 70px 0px 0px 0px;
+}
+ul {
+    list-style-type: none;
 }
 
-
-
-
-/* What am I even doing to this code?*/
-
-
-/*-------- PAINEL ----------*/
-.grid3_cont {
+/*---------------------- Classes Gerais ----------------------*/
+.ico {
+    display: block;
+    width: 25px;
+    margin: 0 auto;
+}
+.bef {
     background-color: white;
-    width: 80%;
-    padding: 0px 10px;
-    border: solid rgb(216, 215, 215) 1px;
-    border-radius: 7px;
     box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+.cor {
+    background-color: var(--rosaM);
+}
+.corL {
+    color: var(--rosaM);
+}
+.space {
+    height: 20px;
+}
+
+/*-------------------- Cabeçalho-Menu ----------------------*/
+#menu {
+    display: inline-block;
+    background-color: var(--black) ;
     text-align: left;
-    font-weight: 400;
+    max-width: 200px;
+    min-height: 100vh;
+}
+#menu.active{
+    left: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: var(--black);
+    color: white;
+    font-weight: 500;
+    min-width: 100vw;
+    margin-bottom: 50px;
+    border-bottom: solid black 1px;
+}
+.logo {
+    width: 70px;
+    margin: 0;
+}
+.user {
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: white;
+    filter: invert(0);
+    width: 40px;
+    margin-left: 15px;
+}
+.header div {
+    display: flex;
+    align-items: center;
+}
+#menu a {
+    color: white;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.mIco {
+    width: 25px;
+    filter: invert(1);
+}
+.mobMenu {
+    display: none;
+}
+
+/*---------------------- Painel ----------------------*/
+select {
+    font-size: 20px;
+    min-width: 300px;
 }
 .grid3 {
-    font-size: 17px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 0px 10px;
-    text-align: center;
-}
-.grid3:last-child {
-    margin: 0px 10px;
-   
-}
-.grid3 div {
-    border-right: 1px solid rgba(83, 83, 83, 0.747);
-}
-.grid3 div:last-child {
-    border-right: none;
-}
-
-/*--------- PEDIDOS ---------*/
-.grid6_cont {
-    background-color: white;
-    width: 80%;
-    padding: 15px 10px;
-    border: solid rgb(216, 215, 215) 1px;
-    border-radius: 7px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    text-align: left;
-    font-weight: 400;
-}
-.grid6 {
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
-}
-.grid6 span a {
-    text-decoration: none;
-    color: rgb(246, 80, 108);
-}
-.grid6 span:last-child {
-    text-align: center;
-}
-
-/*--------- PEDIDOS-VISUALIZAR ---------*/
-.bigrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#pedivisu {
-    background-color: white;
-    border-radius: 10px;    
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);    
-    padding: 15px 10px;
-    width: 350px;
-}
-#pedivisu p {
-    margin-bottom: 5px;
-}
-.grid2_cont {
-    background-color: white;
-    width: 80%;
-    border-radius: 7px;
-    text-align: left;
-    font-weight: 400;
-}
-.botoes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.addit {
-    outline: none;
-    border-radius: 7px;
-    border: none;
-    background-color: #202020;
-    color: white;
-    padding: 5px;
-    font-weight: 100;
-}
-.apldsc {
-    outline: none;
-    border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.397);
-    background-color: white;
-    color:black;
-    padding: 5px;
-    font-weight: 100;
-}
-.recalc {
-    outline: none;
-    border-radius: 7px;
-    border: none;
-    background-color:rgb(244, 33, 58);
-    color: white;
-    padding: 5px;
-    font-weight: 100;
-}
-.cp {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    padding: 10px;
-    width: 300px;
-}
-.cpg {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-}
-.grid5-2 {
-    text-align: left;
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
-}
-
-/*--------- CLIENTES -------------*/
-.grid_cont {
-    background-color: white;
-    width: 80%;
-    padding: 15px 10px;
-    border: solid rgb(216, 215, 215) 1px;
-    border-radius: 7px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    text-align: left;
-    font-weight: 400;
 }
 .grid5 {
-    text-align: center;
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
-}
-.grid5 span a {
-    text-decoration: none;
-    color: rgb(246, 80, 108);
-}
-.grid5 span:last-child {
-    text-align: center;
-}
-.rosa {
-    color: rgb(244, 33, 58);
-    font-weight: 500;
-}
-.senha {
-    text-align: center;
-}
-.eye {
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
-}
-select {
-    border: none;
-    border-radius: 10px;
-    min-width: 325px;
-    min-height: 70px;
-    font-size: 20px;
-    text-align: center;
-    text-indent: 20px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    margin-bottom: 50px;
-    outline: none;
-}
-
-
-/*---------- DESTAQUES ------------*/
-.guardabloco {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.blocao {
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    height: 250px;
-    width: 300px;
-}
-.bloquinho {
-    padding: 40px;
-    border: solid black 1px;
-}
-.mais {
-    width: 30px;
-}
-.but {
-    font-size: 11px;
-    font-weight: 100;
-    width: 100px;
-    margin: 0px 15px;
 }
 
 
-/*--------------- CUPOM -----------*/
-.grid4_cont {
-    background-color: white;
-    width: 80%;
-    padding: 15px 0px;
-    border: solid rgb(216, 215, 215) 1px;
-    border-radius: 7px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    font-weight: 400;
-    height: 250px;
-}
-.grid4 {
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px 0px;
-    text-align: center;
-}
-.grid4 a {
-    text-decoration: none;
-    color: rgb(244, 33, 58);
-}
-.borracha {
-    width: 20px;
-    margin: 0 auto;
-}
+@media screen and (max-width: 768px) {
+/*---------------------- Tags Gerais ------------------*/
+    h4 {
+        margin: 15px 0px;
+    }
+/*---------------------- Classes Gerais ----------------------*/
+    .ico {
+        width: 20px;
+    }
 
-/*------------- Produtos --------------*/
-.wbx {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-}
-.wbxi {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    outline: none;
-    border: none;
+/*-------------------- Cabeçalho-Menu ----------------------*/   
+    #menu {
+        position: fixed;
+        background-color: var(--black) ;
+        text-align: left;
+        max-width: 200px;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 20px;
+        left: -170px;
+        transition: 0.25s;        
+    }
+    .mobMenu {
+        display: block;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: solid black 2px;
+    }
+    .menuArrows {
+        width: 10px;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    .mobMenu:active {
+        background-color: cyan;
+        filter: opacity(0);
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--black);
+        color: white;
+        font-weight: 300;
+        padding: 10px 10px;
+        min-width: 100%;
+        margin-bottom: 20px;
+    }    
+    .logo {
+       width: 80px;
+    }
+    .user { 
+        border: solid black 1px;
+        border-radius: 20px;
+        background-color: white;
+        filter: invert(0);
+        width: 30px;
+    }
+    .header div {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    #menu a {
+        color: white;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+        font-size: 12px;
+    }
+
+    /*---------------------- Painel --------------------*/
+    .corpo {
+        height: 100vh;
+        margin: 0 0 0 19px;
+        padding: 0 25px 70px 10px;
+        height: 100%;
+    }
+    select {
+        min-width: 100px;
+    }
+    .grid3 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .grid5 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-between;
+    }
+    ul {
+        margin: 10px;
+    }
+    .grid5 > ul:last-child {
+        display: none;
+    }
 }

@@ -1,115 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/maki.png">
     <link rel="stylesheet" href="style.css">
-    <title>日本語わからない</title>
+    <title>Kaiso Admin - Painel</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logotipo"></a>
+    <!--------------- Menu ------------------->
+<div class="wrapper">
+    <div id="menu" onclick="show()">
         <div>
-            <span>Olá Leandro</span>
-            <img class ="perfil" src="" alt="">
+            <div class="header">
+                <img class="logo" src="./img/logo.png" alt="Logo-Kaiso">
+                <div>
+                    <span>Olá, Leandro!</span>
+                    <img class="user" src="./img/user.svg" alt="Perfil">
+                </div>
+            </div>
+            <a class="cor" href="painel.html"><img class="mIco" src="./img/gauge.svg" alt=""><h2>Painel</h2></a>
+            <a href="pedidos.html"><img class="mIco" src="./img/box.svg" alt=""><h2>Pedidos</h2></a>
+            <a href="clientes.html"><img class="mIco" src="./img/user.svg" alt=""><h2>Clientes</h2></a>
+            <a href="destaques.html"><img class="mIco" src="./img/shooting-stars.svg" alt=""><h2>Destaques</h2></a>
+            <a href="cupom.html"><img class="mIco" src="./img/coupon.svg" alt=""><h2>Cupom</h2></a>
+            <a href="produtos.html"><img class="mIco" src="./img/sushi.svg" alt=""><h2>Produtos</h2></a>
+            <a href="frete.html"><img class="mIco" src="./img/truck.svg" alt=""><h2>Frete</h2></a>
+            <a href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
         </div>
-    </header>
-    <div class="wrapper">
-        <section class="menu">
-        <a id="cor" href="painel.html">
-            <img class="ico" src="./img/gauge.svg" alt="">
-            Painel
-        </a>
-        <a href="pedidos.html">
-            <img class="ico" src="./img/box.svg" alt="">
-            Pedidos
-        </a>
-        <a href="clientes.html">
-            <img class="ico" src="./img/user.svg" alt="">
-            Clientes
-        </a>
-        <a href="destaques.html">
-            <img class="ico" src="./img/shooting-stars.svg" alt="">
-            Destaques
-        </a>
-        <a href="cupom.html">
-            <img class="ico" src="./img/coupon.svg" alt="">
-            Cupom
-        </a>
-        <a href="produtos.html">
-            <img class="ico" src="./img/sushi.svg" alt="">
-            Produtos
-        </a>
-        <a href="frete.html">
-            <img class="ico" src="./img/truck.svg" alt="">
-            Frete
-        </a>
-        <a href="categorias.html">
-            <img class="ico" src="./img/list.svg" alt="">
-            Categorias
-        </a>
-        </section>
-        <div id="corpo">
-            <h4><b>Intervalor de data</b></h4>
-            <select name="" id="">
-                <option value="30d">Últimos 30 dias</option>
-            </select>
-            <h4>Performance</h4>
-            <div class="grid3_cont">
-                <div class="grid3 rosa">
-                    <div><br>Total de vendas</div>
-                    <div><br>Vendas</div>
-                    <div><br>Total de encomendas
-                    </div>
-                </div>
-                <div class="grid3">
-                    <div>100</div>
-                    <div>€ 15000 </div>
-                    <div>110
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4>Pedidos em aberto (Hoje)</h4>
-            <div class="grid_cont">
-                <div class="grid5 rosa">
-                    <span>Cliente</span>
-                    <span>Email</span>
-                    <span>Telefone</span>
-                    <span>Data de criação</span>
-                    <span><a href="pedidos-visualizar.html">Visualizar</a></span>
-                </div>
-                <div class="grid5">
-                    <span>Iago</span>
-                    <span>2354654@gmail.com</span>
-                    <span>08007071616</span>
-                    <span>05/06/1997</span>
-                    <span><img class="eye" src="./img/eye.svg" alt=""></span>
-                </div>
-                <div class="grid5">
-                    <span>Iago</span>
-                    <span>2354654@gmail.com</span>
-                    <span>08007071616</span>
-                    <span>05/06/1997</span>
-                    <span><img class="eye" src="./img/eye.svg" alt=""></span>
-                </div>
-                <div class="grid5">
-                    <span>Iago</span>
-                    <span>2354654@gmail.com</span>
-                    <span>08007071616</span>
-                    <span>05/06/1997</span>
-                    <span><img class="eye" src="./img/eye.svg" alt=""></span>
-                </div>
-                <br>
-            </div>
+        <div class="mobMenu">
+            <img class="menuArrows" src="./img/arrows.svg" alt="">
         </div>
     </div>
+    <!----------- End of Menu-->
+    <!------------ Começo do Corpo-->
+    <div class="corpo">
+        <h4>Intervalor de data</h4>
+        <select name="" id="" class="bef">
+            <option value="">Últimos 30 dias</option>
+        </select>
+        <div class="space"></div>
+        <h4>Performance</h4>
+        <div class="grid3 bef">
+            <ul>
+                <li class="corL">Total de vendas</li>
+                <li><h3>100</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Vendas</li>
+                <li><h3>100</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Total de encomendas</li>
+                <li><h3>100</h3></li>
+            </ul>
+        </div>
+        <div class="space"></div>
+        <h4>Pedidos em aberto (Hoje)</h4>
+        <div class="grid5 bef">
+            <ul>
+                <li class="corL">Pedido</li>
+                <li><h3>Pedido</h3></li>
+                <li><h3>Pedido</h3></li>
+                <li><h3>Pedido</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Cliente</li>
+                <li><h3>Cliente</h3></li>
+                <li><h3>Cliente</h3></li>
+                <li><h3>Cliente</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Descrição</li>
+                <li><h3>Descrição</h3></li>
+                <li><h3>Descrição</h3></li>
+                <li><h3>Descrição</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Valor</li>
+                <li><h3>Valor</h3></li>
+                <li><h3>Valor</h3></li>
+                <li><h3>Valor</h3></li>
+            </ul>
+            
+            <ul>
+                <li class="corL">Morada</li>
+                <li><h3>Morada</h3></li>
+                <li><h3>Morada</h3></li>
+                <li><h3>Morada</h3></li>
+            </ul>
+            
+            <ul>
+                <li class="corL">Entrega</li>
+                <li><h3>Entrega</h3></li>
+                <li><h3>Entrega</h3></li>
+                <li><h3>Entrega</h3></li>
+            </ul>
+            <ul>
+                <li class="corL">Visualizar</li>
+                <li><img class="ico" src="./img/eye.svg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
