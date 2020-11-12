@@ -38,7 +38,7 @@ h4 {
     background-color: var(--gray);
     width: 100%;
     min-height: 100vh;
-    z-index: -1;
+    z-index: 1;
     padding: 50px;
     margin: 70px 0px 0px 0px;
 }
@@ -57,7 +57,7 @@ li {
 }
 .bef {
     background-color: white;
-    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px 15px;
     outline: none;
@@ -72,6 +72,27 @@ li {
 }
 .space {
     height: 20px;
+}
+.eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background-color: var(--rosaM);
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.eye:hover {
+    filter: brightness(1.5);
+}
+.eye img{
+    filter: invert(1);
+    width: 100%;
+    height: 100%;
 }
 
 /*-------------------- Cabeçalho-Menu ----------------------*/
@@ -145,12 +166,11 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-items: center;
     width: 400px;
 }
-#index h1 {
-    color: #ffffff;
-    margin-bottom: 50px;
-    font-size: 40px;
+#index img {
+    width: 150px;
 }
 #index form > input {
     width: 100%;
@@ -167,6 +187,9 @@ li {
     color: rgba(0, 0, 0, 0.877);
     font-weight: bolder;
     font-size: 17px;
+}
+#index form div {
+   text-align: center;
 }
 #index form div input {
     width: 190px;
@@ -190,10 +213,87 @@ li {
     color: white;
     font-size: 12px;
     cursor: pointer;
+    text-align: center;
 }
 #index a:hover {
     transition: 350ms;
     color: rgb(48, 226, 250);
+}
+
+/*----------------------- Recuperar Senha --------------------*/
+#rec {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/sushi-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#rec form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+#rec img {
+    width: 150px;
+}
+#rec form > input {
+    width: 100%;
+    margin: 15px 0px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    height: 35px;
+    text-indent: 20px;
+    text-align: left;
+}
+#rec form > input::placeholder {
+    color: rgba(0, 0, 0, 0.877);
+    font-weight: bolder;
+    font-size: 17px;
+}
+#rec form div {
+   text-align: center;
+}
+#rec form div input {
+    width: 190px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 35px;
+    color: white;
+    background-color: rgb(244, 33, 58);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 15px 15px 15px 0px;
+    cursor: pointer;
+}
+#rec form div input:hover {
+    transition: 350ms linear;
+    background-color: rgb(255, 0, 30);
+    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
+}
+#rec a {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+#rec a:hover {
+    transition: 350ms;
+    color: rgb(48, 226, 250);
+}
+#rec p {
+    color: white;
+    padding: 20px;
 }
 
 /*---------------------- Painel ----------------------*/
@@ -210,6 +310,60 @@ select {
 .grid5 {
     display: flex;
     justify-content: space-between;
+}
+.perf {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.perfbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.perfNum {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.vendas {
+    color: white;
+    background-color: var(--rosaM);
+}
+.grid6 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 40px;
+    align-items: center;
+    justify-content: center;
+}
+.grid6 span {
+    line-height: 40px;
+    text-align: center
+}
+.acinzentado {
+    background-color: rgba(128, 128, 128, 0.301);
+}
+/*-------------------- Pedidos-Visualizar -------------------*/
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.grid1 button {
+    width: 10px;
+    height: 15px;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+}
+.left select {
+    width: 10px;
+}
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+span input {
+    width: 50px;
 }
 
 /*-------------------- Destaques -------------------*/
@@ -245,6 +399,7 @@ button {
     justify-content: space-between;
     width: 400px;
 }
+
 /*----------------------- Cupom -------------------------*/
 .apg {
     width: 25px;
@@ -256,6 +411,7 @@ button {
 /*---------------------- Tags Gerais ------------------*/
     h4 {
         margin: 15px 0px;
+        text-align: center;
     }
 /*---------------------- Classes Gerais ----------------------*/
     .ico {
@@ -269,7 +425,7 @@ button {
         text-align: left;
         max-width: 200px;
         min-height: 100%;
-        left: -300px;
+        left: -310px;
         transition: 0.25s;
         border-right: solid black 1px;
         z-index: 999999;    
@@ -279,18 +435,25 @@ button {
         box-shadow: 0px 0px 1000px 1000px rgba(0, 0, 0, 0.8);
     }
     .mobMenu {
-        background-color: var(--black);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
         position: fixed;
+        z-index: -1;
         right: 0;
         top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        border-left: solid black 2px;
         width: 100vw;
-        height: fit-content;
-        z-index: -1;
+        height: 11vh;
+        padding: 10px;
+        background-color: var(--black);
+        border-left: solid black 2px;
+    }
+    .smalllogo {
+        display: block;
+        width: 60px;
+        height: 50px;
+        margin: 0 auto;
     }
     .menuArrows {
         width: 40px;
@@ -303,6 +466,7 @@ button {
     }
     #close.aparecer {
         display: flex;
+        margin: 0 auto;
     }
     .header {
         display: flex;
@@ -409,6 +573,75 @@ button {
     color: rgb(48, 226, 250);
     }
 
+    /*----------------------- Recuperar Senha ---------------*/
+    #rec {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url("./img/sushi-bg.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #rec form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    #rec h1 {
+        color: #ffffff;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    #rec form > input {
+        width: 80%;
+        margin: 15px 0px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        background-color: #ffffff;
+        height: 35px;
+        text-indent: 20px;
+        text-align: left;
+    }
+    #rec form > input::placeholder {
+        color: rgba(0, 0, 0, 0.877);
+        font-weight: bolder;
+        font-size: 17px;
+    }
+    #rec form div input {
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        height: 35px;
+        color: white;
+        background-color: rgb(244, 33, 58);
+        font-weight: 600;
+        font-size: 15px;
+        margin: 15px 15px 15px 0px;
+        cursor: pointer;
+    }
+    #rec form div input:hover {
+        transition: 350ms linear;
+        background-color: rgb(255, 0, 30);
+        box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
+    }
+    #rec a {
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    #rec a:hover {
+        transition: 350ms;
+        color: rgb(48, 226, 250);
+    }
+
     /*---------------------- Painel --------------------*/
     .corpo {
         height: 100vh;
@@ -417,7 +650,7 @@ button {
         height: 100%;
     }
     select {
-        min-width: 100px;
+        width: 100%;
     }
     .grid3 {
         display: flex;
@@ -433,6 +666,32 @@ button {
     ul {
         margin: 10px;
     }
+    .perfbox {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .perf {
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .perfNum {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .grid6 {
+        grid-template-columns: repeat(3, 1fr) 30px;
+        padding: 0 10px 0 0;
+    }
+    .mobno {
+        display: none;
+    }
+    .grid6 span {
+        line-height: 40px;
+        text-align: center
+    }
+    
 
     /*-------------------- Destaques -------------------*/
     .bloco {

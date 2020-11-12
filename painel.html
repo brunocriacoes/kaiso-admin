@@ -28,8 +28,15 @@
             <a href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
         </div>
         <div class="mobMenu">
-            <img class="menuArrows" src="./img/arrows.svg" alt="">
-            <img id="close" src="./img/close.svg" alt="">
+            <div>
+                <img class="menuArrows" src="./img/arrows.svg" alt="">
+            </div>
+            <div>
+                <img src="./img/logo.png" alt="" class="smalllogo">
+            </div>
+            <div>
+                <img id="close" src="./img/close.svg" alt="">
+            </div>
         </div>
     </div>
     <!----------- End of Menu-->
@@ -38,73 +45,72 @@
         <h4>Intervalor de data</h4>
         <select name="" id="" class="bef">
             <option value="">Últimos 30 dias</option>
+            <option value="">Últimos 60 dias</option>
+            <option value="">Últimos 90 dias</option>
         </select>
         <div class="space"></div>
+
         <h4>Performance</h4>
-        <div class="grid3 bef">
-            <ul>
+        <div class="perfbox">
+            <ul class="bef perf">
                 <li class="corL">Total de vendas</li>
-                <li><h3>100</h3></li>
+                <li><h3><span class="perfNum">100</span></h3></li>
             </ul>
-            <ul>
-                <li class="corL">Vendas</li>
-                <li><h3>100</h3></li>
+            <ul class="bef perf vendas">
+                <li>Vendas</li>
+                <li><h3><span class="perfNum">€ 100,00</span></h3></li>
             </ul>
-            <ul>
+            <ul class="bef perf">
                 <li class="corL">Total de encomendas</li>
-                <li><h3>100</h3></li>
+                <li><h3><span class="perfNum">100</span></h3></li>
             </ul>
         </div>
+
         <div class="space"></div>
         <h4>Pedidos em aberto (Hoje)</h4>
-        <div class="grid3 bef">
-            <ul>
-                <li class="corL">Pedido</li>
-                <li><h3>Pedido</h3></li>
-                <li><h3>Pedido</h3></li>
-                <li><h3>Pedido</h3></li>
-            </ul>
-            <ul>
-                <li class="corL">Cliente</li>
-                <li><h3>Cliente</h3></li>
-                <li><h3>Cliente</h3></li>
-                <li><h3>Cliente</h3></li>
-            </ul>
-            <ul>
-                <li class="corL">Descrição</li>
-                <li><h3>Descrição</h3></li>
-                <li><h3>Descrição</h3></li>
-                <li><h3>Descrição</h3></li>
-            </ul>
-            <ul>
-                <li class="corL">Valor</li>
-                <li><h3>Valor</h3></li>
-                <li><h3>Valor</h3></li>
-                <li><h3>Valor</h3></li>
-            </ul>
-            
-            <ul>
-                <li class="corL">Morada</li>
-                <li><h3>Morada</h3></li>
-                <li><h3>Morada</h3></li>
-                <li><h3>Morada</h3></li>
-            </ul>
-            
-            <ul>
-                <li class="corL">Entrega</li>
-                <li><h3>Entrega</h3></li>
-                <li><h3>Entrega</h3></li>
-                <li><h3>Entrega</h3></li>
-            </ul>
-            <ul>
-                <li class="corL">Visualizar</li>
-                <li><a href="produto-detalhe.html"><img class="ico" src="./img/eye.svg" alt=""></a></li>
-                <li><a href="produto-detalhe.html"><img class="ico" src="./img/eye.svg" alt=""></a></li>
-                <li><a href="produto-detalhe.html"><img class="ico" src="./img/eye.svg" alt=""></a></li>
-            </ul>
+        <div class="bef">
+            <div class="corL grid6 ">
+                <span>Pedido</span>
+                <span class="mobno">Cliente</span>
+                <span>Valor</span>
+                <span class="mobno">Tipo de Entrega</span>
+                <span>Status</span>
+                <span></span>
+            </div>
+            <div class="grid6 acinzentado">
+                <span>#1001</span>
+                <span class="mobno">Estevão</span>
+                <span><b>€ 23,35</b></span>
+                <span class="mobno">Delivery</span>
+                <span>Pendente</span>
+                <a class="eye" href="./pedidos-visualizar.html">
+                    <img src="./img/eye.svg" alt="">
+                </a>
+            </div>
+            <div class="grid6">
+                <span>#1001</span>
+                <span class="mobno">Estevão</span>
+                <span><b>€ 23,35</b></span>
+                <span class="mobno">Delivery</span>
+                <span>Pendente</span>
+                <a class="eye" href="./pedidos-visualizar.html">
+                    <img src="./img/eye.svg" alt="">
+                </a>
+            </div>
+            <div class="grid6 acinzentado">
+                <span>#1001</span>
+                <span class="mobno">Estevão</span>
+                <span><b>€ 23,35</b></span>
+                <span class="mobno">Delivery</span>
+                <span>Pendente</span>
+                <a class="eye" href="./pedidos-visualizar.html">
+                    <img src="./img/eye.svg" alt="">
+                </a>
+            </div>
         </div>
     </div>
 </div>
+
     <script src="script.js"></script>
 </body>
 </html>
