@@ -48,6 +48,11 @@ ul {
 li {
     margin: 10px 0px;
 }
+button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
 
 /*---------------------- Classes Gerais ----------------------*/
 .ico {
@@ -66,6 +71,9 @@ li {
 .cor {
     background-color: var(--rosaM);
     color: white;
+}
+.corL {
+    color: var(--rosaM);
 }
 .corL span {
     color: var(--rosaM);
@@ -339,7 +347,6 @@ select {
     border-radius: 5px;
 }
 
-
 /*----- right ----*/
 .titulo-cinza {
     color: #777;
@@ -450,38 +457,53 @@ select {
 .mobye {
     display: none;
 }
-/*-------------------- Destaques -------------------*/
-.bloco {
-    padding: 70px 80px;
+/*-------------------- Clientes -------------------*/
+.clientes-lista div {
+    line-height: 40px;
+    align-items: center;
+    text-indent: 20px;
 }
-.cubo {
-    display: flex;
-    border: solid black 1px;
-    padding: 50px;
+.clientes-lista div:nth-child(even) {
+    background-color: var(--gray);
 }
-.mais {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
+/*-------------------- Detalhes do Cliente -------------------*/
+.enderecos-card {
+    display: block;
+    background-color: rgba(236, 232, 232, 0.658);
+    border-radius: 10px;
+    padding: 10px;
 }
-h1 {
-    font-size: 40px;
-}
-button {
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-.bb {
-    background-color: var(--black);
-    color: white;
-}
-.butcon {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
+.enderecos-card label {
+    display: inline-block;
 }
 
+/*-------------------- Destaques -------------------*/
+.bloco-externo {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+}
+.bloco-interno {
+    display: flex;
+    border: solid black 1px;
+    height: 100%;
+    width: 100%;
+}
+.sinal-mais {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+}
+
+.destaques-botoes button {
+    background-color: var(--black);
+    color: white;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
 /*----------------------- Cupom -------------------------*/
 .apg {
     width: 25px;
@@ -785,28 +807,30 @@ button {
         --cols: 1fr 1fr 1fr 30px;
     }
 
+    /*-------------------- Clientes --------------------*/
+    .clientes-lista div {
+        --cols: 1fr 1fr !important;
+    }
+
+    /*------------------- Detalhes do Cliente -------------*/
+    .enderecos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .clientes-inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .enderecos-title {
+        text-align: center;
+    }
+    .detalhes-do-cliente {
+        --cols: 1fr !important;
+    }
+
     /*-------------------- Destaques -------------------*/
-    .bloco {
-        padding: 70px 80px;        
-        margin: 10px 0px;
-    }
-    .cubo {
-        display: flex;
-        border: solid black 1px;
-        padding: 50px;
-    }
-    .mais {
-        width: 30px;
-        height: 30px;
-        margin: 0 auto;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    .butcon {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+    .destaques-grid {
+        --cols: 1 !important;
     }
 
     /*----------------------- Cupom -------------------------*/
