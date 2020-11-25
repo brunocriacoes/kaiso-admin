@@ -417,6 +417,7 @@ select {
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 .grid {
     --cols: 1;
@@ -478,32 +479,38 @@ select {
 }
 
 /*-------------------- Destaques -------------------*/
-.bloco-externo {
-    display: block;
+.detalhes-formularios input[type=file] {
+    border: solid var(--gray) 1px;
+    border-radius: 5px;
+    text-indent: 20px;
+}
+.destaques-grid img{
     width: 100%;
-    height: 300px;
-    padding: 50px;
+    border: none;
+    outline: none;    
+    border-radius: 5px;  
 }
-.bloco-interno {
-    display: flex;
-    border: solid black 1px;
-    height: 100%;
+.destaques-grid div {
     width: 100%;
+    position: relative;    
+    border-radius: 5px;
 }
-.sinal-mais {
+.destaques-grid .apagar {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
     display: block;
+    border: none;
     margin: 0 auto;
-    width: 40px;
-}
-
-.destaques-botoes button {
-    background-color: var(--black);
-    color: white;
-    width: 200px;
-    height: 30px;
-    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
     cursor: pointer;
 }
+
 /*----------------------- Cupom -------------------------*/
 .apg {
     width: 25px;
@@ -830,6 +837,9 @@ select {
 
     /*-------------------- Destaques -------------------*/
     .destaques-grid {
+        --cols: 1 !important;
+    }
+    .destaques-form {
         --cols: 1 !important;
     }
 

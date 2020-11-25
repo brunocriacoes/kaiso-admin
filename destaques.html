@@ -42,31 +42,23 @@
         <!----------- End of Menu-->
         <!------------ Começo do Corpo-->
         <div class="corpo">
-            <h4>Destaques</h4>
-            <div class="space"></div>
-            <div class="destaques-grid grid" style="--cols: 3">
-                <div class="bef bloco-externo">
-                    <div class="bloco-interno">
-                        <img class ="sinal-mais" src="./img/add.svg" alt="">
-                    </div>
+           <h4>Destaques</h4>
+           <form class="detalhes-formularios destaques-form bef grid-custom" action="" style="--cols: 1fr 200px">
+               <input type="file" name="adicionar_imagem" id="escolher" accept="image/png, image/jpeg">
+               <input type="submit" value="Adicionar imagem">
+           </form>
+           <div class="space"></div>
+           <h4>Imagens Cadastradas</h4>
+           <div class="destaques-grid grid bef" style="--cols: 3">
+                <div>
+                    <img src="./img/delete.svg" class="apagar" alt="">
+                    <img src="./img/sushi-destaque.jpg" alt="">
                 </div>
-                <div class="bef bloco-externo">
-                    <div class="bloco-interno">
-                        <img class ="sinal-mais" src="./img/add.svg" alt="">
-                    </div>
+                <div>
+                    <img src="./img/delete.svg" class="apagar" alt="">
+                    <img src="./img/sushi-destaque-bandeja.jpg" alt="">
                 </div>
-                <div class="bef bloco-externo">
-                    <div class="bloco-interno">
-                        <img class ="sinal-mais" src="./img/add.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="destaques-botoes grid" style="--cols: 3">
-                <button class="mobno">Alterar banners</button>
-                <button class="mobno">Apagar banner</button>
-                <button>Salvar</button>
-            </div>
+           </div>
         </div>
     </div>
     <script src="script.js"></script>
