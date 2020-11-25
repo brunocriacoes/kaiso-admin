@@ -28,33 +28,51 @@
                 <a href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
             </div>
             <div class="mobMenu">
-                <img class="menuArrows" src="./img/arrows.svg" alt="">
-                <img id="close" src="./img/close.svg" alt="">
+                <div>
+                    <img class="menuArrows" src="./img/arrows.svg" alt="">
+                </div>
+                <div>
+                    <img src="./img/logo.png" alt="" class="smalllogo">
+                </div>
+                <div>
+                    <img id="close" src="./img/close.svg" alt="">
+                </div>
             </div>
         </div>
         <!----------- End of Menu-->
         <!------------ Começo do Corpo-->
         <div class="corpo">
-            <h4>Cupom</h4>
+            <div class="titulo-cupom-grid grid-custom" style="--cols: 1fr 200px;">
+                <h4>Cupom</h4>
+                <a class="add-cupom" href="./criacao-cupom.html">Adicionar Cupom</a>
+            </div>
             <div class="space"></div>
-            <div class="grid3 bef">
-                <ul>
-                    <li class="corL">Cupom</li>
-                    <li><h3>AA555</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Desconto</li>
-                    <li><h3>Cliente</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Data de criação</li>
-                    <li><h3>11/11/1111</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Excluir</li>
-                    <li><img class="apg" src="./img/eraser.svg" alt=""></li>
-                </ul>
-        </div>
+            <div class="bef cupom-lista">
+                <div class="grid-custom corL" style="--cols: 1fr 1fr 1fr 70px">
+                    <span>Código</span>
+                    <span>Desconto %</span>
+                    <span>Desconto €</span>
+                    <span></span>
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 1fr 70px">
+                    <span>654654#</span>
+                    <span>25%</span>
+                    <span>€1.50</span>
+                    <img class="ico-bin" src="./img/bin.svg" alt="">
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 1fr 70px">
+                    <span>654654#</span>
+                    <span>25%</span>
+                    <span>€1.50</span>
+                    <img class="ico-bin" src="./img/bin.svg" alt="">
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 1fr 70px">
+                    <span>654654#</span>
+                    <span>25%</span>
+                    <span>€1.50</span>
+                    <img class="ico-bin" src="./img/bin.svg" alt="">
+                </div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>

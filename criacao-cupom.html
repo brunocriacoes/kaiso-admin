@@ -22,8 +22,8 @@
             <a href="pedidos.html"><img class="mIco" src="./img/box.svg" alt=""><h2>Pedidos</h2></a>
             <a href="clientes.html"><img class="mIco" src="./img/user.svg" alt=""><h2>Clientes</h2></a>
             <a href="destaques.html"><img class="mIco" src="./img/shooting-stars.svg" alt=""><h2>Destaques</h2></a>
-            <a href="cupom.html"><img class="mIco" src="./img/coupon.svg" alt=""><h2>Cupom</h2></a>
-            <a class="cor" href="produtos.html"><img class="mIco" src="./img/sushi.svg" alt=""><h2>Produtos</h2></a>
+            <a class="cor" href="cupom.html"><img class="mIco" src="./img/coupon.svg" alt=""><h2>Cupom</h2></a>
+            <a href="produtos.html"><img class="mIco" src="./img/sushi.svg" alt=""><h2>Produtos</h2></a>
             <a href="frete.html"><img class="mIco" src="./img/truck.svg" alt=""><h2>Frete</h2></a>
             <a href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
         </div>
@@ -42,37 +42,21 @@
     <!----------- End of Menu-->
     <!------------ Começo do Corpo-->
     <div class="corpo">
-        <h4>Lista de produtos</h4>
-        <div class="bef produtos-lista">
-            <div class="corL grid-custom " style="--cols: 1fr 1fr 60px">
-                <span>Nome</span>
-                <span>Valor</span>
-                <span></span>
+        <h4>Criação de Cupom</h4>
+        <div class="criacao-cupom-lista bef">
+            <div>
+                <label class="yo" for="codigo">Código #</label>
+                <input type="text" name="" id="codigo">
             </div>
-            <div class="grid-custom " style="--cols: 1fr 1fr 60px">
-                <span>Nome</span>
-                <span>Valor</span>
-                <div class="grid produtos-icones" style="--cols: 2">
-                    <div class="pencil-container"><img src="./img/pencil.svg" alt="" class="ico-pencil"></div>
-                    <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
-                </div>
+            <div>
+                <label for="desconto-porcento">Desconto %</label>
+                <input type="number" name="" id="desconto-porcento">
             </div>
-            <div class="grid-custom " style="--cols: 1fr 1fr 60px">
-                <span>Nome</span>
-                <span>Valor</span>
-                <div class="grid produtos-icones" style="--cols: 2">
-                    <div class="pencil-container"><img src="./img/pencil.svg" alt="" class="ico-pencil"></div>
-                    <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
-                </div>
+            <div>
+                <label for="desconto-euro">Desconto €</label>
+                <input type="number" name="" id="desconto-euro">
             </div>
-            <div class="grid-custom " style="--cols: 1fr 1fr 60px">
-                <span>Nome</span>
-                <span>Valor</span>
-                <div class="grid produtos-icones" style="--cols: 2">
-                    <div class="pencil-container"><img src="./img/pencil.svg" alt="" class="ico-pencil"></div>
-                    <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
-                </div>
-            </div>
+                <input type="submit" value="Adicionar">
         </div>
     </div>
 </div>
