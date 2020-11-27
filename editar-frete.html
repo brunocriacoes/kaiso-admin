@@ -24,8 +24,8 @@
                 <a href="destaques.html"><img class="mIco" src="./img/shooting-stars.svg" alt=""><h2>Destaques</h2></a>
                 <a href="cupom.html"><img class="mIco" src="./img/coupon.svg" alt=""><h2>Cupom</h2></a>
                 <a href="produtos.html"><img class="mIco" src="./img/sushi.svg" alt=""><h2>Produtos</h2></a>
-                <a href="frete.html"><img class="mIco" src="./img/truck.svg" alt=""><h2>Frete</h2></a>
-                <a class="cor" href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
+                <a class="cor" href="frete.html"><img class="mIco" src="./img/truck.svg" alt=""><h2>Frete</h2></a>
+                <a href="categorias.html"><img class="mIco" src="./img/list.svg" alt=""><h2>Categorias</h2></a>
             </div>
             <div class="mobMenu">
                 <img class="menuArrows" src="./img/arrows.svg" alt="">
@@ -35,28 +35,21 @@
         <!----------- End of Menu-->
         <!------------ Começo do Corpo-->
         <div class="corpo">
-            <div class="titulo-cupom-grid grid-custom" style="--cols: 1fr 200px">
-                <h4>Categorias</h4>
-                <a class="add-cupom" href="editar-categoria.html">Adicionar Categoria</a>
-            </div>
-            <div class="space"></div>
-            <div class="bef produtos-lista">
-                <div class="corL grid-custom" style="--cols:1fr 1fr 40px">
-                    <span>Categorias</span>
-                    <span>Produtos Cadastrados</span>
-                    <span></span>
+            <h4>Editar Frete</h4>
+           <form class="editor-frete bef" action="">
+               <div class="corL">
+                <div>
+                    <label for="localizacao">Localização</label>
+                    <input type="text" name="" id="localizacao">
                 </div>
-                <div class="grid-custom" style="--cols:1fr 1fr 40px">
-                    <span>#654325</span>
-                    <span>Produtos Cadastrados</span>
-                    <a class="eye" href=""><img class="ico" src="./img/eye.svg" alt=""></a>
+                <div>
+                    <label for="taxa">Taxa</label>
+                    <input type="text" name="" id="taxa">
                 </div>
-                <div class="grid-custom" style="--cols:1fr 1fr 40px">
-                    <span>#316823</span>
-                    <span>Produtos Cadastrados</span>
-                    <a class="eye" href=""><img class="ico" src="./img/eye.svg" alt=""></a>
+                
+                <input type="submit" value="Adicionar">
                 </div>
-            </div>
+           </form>
         </div>
     </div>
     <script src="script.js"></script>

@@ -35,35 +35,45 @@
         <!----------- End of Menu-->
         <!------------ Começo do Corpo-->
         <div class="corpo">
-            <h4>Regras de frete</h4>
-            <div class="space"></div>            
-            <div class="grid3 bef">
-                <ul>
-                    <li class="corL">Tipo de entrega</li>
-                    <li><h3>Delivery</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Localização</li>
-                    <li><h3>Lisboa</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Taxa</li>
-                    <li><h3>R$ 5,00</h3></li>
-                </ul>
-                <ul>
-                    <li class="corL">Editar</li>
-                    <li><img class="apg" src="./img/settings.svg" alt=""></li>
-                </ul>
-                <ul>
-                    <li class="corL">Excluir</li>
-                    <li><img class="apg" src="./img/eraser.svg" alt=""></li>
-                </ul>
+            <div class="titulo-cupom-grid grid-custom" style="--cols: 1fr 200px">
+                <h4>Regras de Frete</h4>
+                <a class="add-cupom" href="./editar-frete.html">Adicionar novo Frete</a>
+                <div style="height: 10px"></div>
             </div>
-            <div class="space"></div>
-            <div class="">
-                <button class="bb">Adicionar frete</button>
-                <span> &nbsp;&nbsp;&nbsp;</span>
-                <button class="cor">Salvar</button>
+            <div class="bef frete-lista">
+                <div class="corL grid-custom" style="--cols: 1fr 1fr 70px 80px">
+                    <span>Tipo de Entrega</span>
+                    <span>Localização</span>
+                    <span>Taxa</span>
+                    <span></span>
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 70px 70px">
+                    <span>Delivery</span>
+                    <span>Sintra</span>
+                    <span>€7,00</span>
+                    <div class="grid produtos-icones" style="--cols: 2">
+                        <div class="pencil-container"><a href="./editar-frete.html"><img src="./img/pencil.svg" alt="" class="ico-pencil"></a></div>
+                        <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
+                    </div>
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 70px 70px">
+                    <span>Delivery</span>
+                    <span>Évora</span>
+                    <span>€5,00</span>
+                    <div class="grid produtos-icones" style="--cols: 2">
+                        <div class="pencil-container"><a href="./editar-frete.html"><img src="./img/pencil.svg" alt="" class="ico-pencil"></a></div>
+                        <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
+                    </div>
+                </div>
+                <div class="grid-custom" style="--cols: 1fr 1fr 70px 70px">
+                    <span>Delivery</span>
+                    <span>Lisboa</span>
+                    <span>€3,00</span>
+                    <div class="grid produtos-icones" style="--cols: 2">
+                        <div class="pencil-container"><a href="./editar-frete.html"><img src="./img/pencil.svg" alt="" class="ico-pencil"></a></div>
+                        <div class="bin-container"><img class="ico-bin" src="./img/bin.svg"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
