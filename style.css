@@ -564,33 +564,28 @@ select {
 .produtos-icones {
     gap: 5px;
 }
-.pencil-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(20, 141, 255, 0.904);
-    border-radius: 5px;
-    text-align: center;
+.pencil-bg {
+    background-color: rgb(29, 153, 255);
+    width: 30px;
     height: 30px;
-    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
-}
-.bin-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--rosaM);
+    padding: 5px;
     border-radius: 5px;
-    height: 30px;
-    box-shadow: inset 1px 1px 7px 1px rgba(0, 0, 0, 0.233);
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.37);
 }
-.bin-container .ico-bin {
-    width: 20px;
-    filter: invert(1);
+.bin-bg {
+    background-color:var(--rosaM);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.37);
+
+}
+.pencil-bg img, .bin-bg img {
+    width: 100%;
+    display: block;
     margin: 0 auto;
-}
-.ico-pencil {
-    filter: invert(1);
-    width: 20px;
+    filter: invert();
 }
 /*----------------------- Produto -------------------------*/
 .produto-left label {
@@ -707,7 +702,6 @@ textarea {
     width: 100px;
     cursor: pointer;
 }
-/*------------------------ Categorias -------------------*/
 
 @media screen and (max-width: 768px) {
 /*---------------------- Tags Gerais ------------------*/
@@ -719,7 +713,11 @@ textarea {
     .ico {
         width: 20px;
     }
-
+/*-------------------------------- Mob Fix ------------------*/
+.mob-fix {
+    justify-content: center;
+    align-items: center;
+}
 /*-------------------- Cabeçalho-Menu ----------------------*/   
     #menu {
         position: fixed;
@@ -1033,7 +1031,10 @@ textarea {
     .destaques-form {
         --cols: 1 !important;
     }
-
+    /*----------------------- Frete --------------------------*/
+    .grid-frete-mob {
+        --cols: 1fr 70px 70px !important;
+    }
     /*----------------------- Cupom -------------------------*/
     .titulo-cupom-grid {
         --cols: 1fr !important;
@@ -1043,7 +1044,6 @@ textarea {
         font-size: 12px;
         text-indent: 0px;
     }
-    /*----------------------- Cupom -------------------------*/
     .produto-grid {
         --cols: 1 !important;
     }
